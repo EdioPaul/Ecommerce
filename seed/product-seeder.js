@@ -41,6 +41,24 @@ var products = [
     description: 'Acessório Feminino',
     price: 60
  }),
+   new Product ({
+    imagePath: 'http://montarkitralifla.com.br/painel/imagens/foto11/14203.jpg',
+    title: 'Brincos',
+    description: 'Acessório Feminino',
+    price: 10
+   }),
+    new Product ({
+    imagePath: 'http://montarkitralifla.com.br/painel/imagens/foto11/75279.jpg',
+    title: 'Anel',
+    description: 'Acessório Feminino',
+    price: 20
+   }),
+   new Product ({
+    imagePath: 'http://montarkitralifla.com.br/painel/imagens/foto11/76172.jpg',
+    title: 'Anel',
+    description: 'Acessório Feminino',
+    price: 30
+   }),
 ];
 
 var done = 0;
