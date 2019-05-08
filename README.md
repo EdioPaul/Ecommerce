@@ -22,7 +22,7 @@ npm install
 2. Semeando o banco
 
 
-Na diretorio seed, rode o comando - node product-seed.js
+Na diretorio seed, rode o comando - node product-seeder.js
 
 
 3.Execute o aplicativo
