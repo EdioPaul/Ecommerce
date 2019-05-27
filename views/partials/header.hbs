@@ -6,7 +6,10 @@
   </button>
 
       <ul class="nav navbar-nav navbar-right">
-            <a class="nav-link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Carrinho</a>
+            <a class="nav-link" href="/shopping-cart/">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i> Carrinho
+              <span class="badge">{{session.cart.totalQty}}</span>
+              </a>
               <li class="dropdown">
        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i>
           Gerenciamento</a>
