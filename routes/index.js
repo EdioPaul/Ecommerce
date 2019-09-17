@@ -24,13 +24,15 @@ router.get('/', function(req, res, next) {
 
 router.get('/add-to-cart/:id', function(req, res, next) {
      var productId = req.params.id;
-     var cart = new Cart(req.session.cart ? req.session.cart : {items: {}});
+     var cart = new Cart(req.session.cart ? req.session.cart : {});
 
      Product.findById(productId, function(err, product) {
           if (err) {
                return res.redirect('/');
           }
-          cart.add(product, product.Id);
+          //toObject lista itens do carrinho pelo id com console.log
+          const productObject = product.toObject();
+          cart.add(product, productObject._id);
           req.session.cart = cart;
           console.log(req.session.cart);
           res.redirect('/');

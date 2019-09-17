@@ -17,6 +17,7 @@ var userRoutes = require('./routes/user');
 
 var app = express();
 
+//Driver de conexão ao BD
 mongoose.connect('mongodb://localhost:27017/shopping', {useNewUrlParser: true});
 require('./config/passport');
 
