@@ -2,15 +2,15 @@ Stripe.setPublishablekey('pk_test_RZFk2gnXGk8YjQTq18lI0D2100hVS5ALL5');
 
 var $form = $('#checkout-form');
 
-$form.submit(function(event) {
+$form.submit(function (event) {
     $('#charge-error').addClass('hidden');
     $form.find('button').prop('disabled', true);
     Stripe.card.createToken({
-    number: $('#card-number').val(),
-    cvc: $('#card-cvc').val(),
-    exp_month: $('#card-expiry-month').val(),
-    exp_year: $('#card-expiry-year').val(),
-    name: $('#card-name').val()
+        number: $('#card-number').val(),
+        cvc: $('#card-cvc').val(),
+        exp_month: $('#card-expiry-month').val(),
+        exp_year: $('#card-expiry-year').val(),
+        name: $('#card-name').val()
     }, stripeResponseHandler);
     return false;
 });
